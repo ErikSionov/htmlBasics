@@ -8,11 +8,14 @@
   </head>
   <body>
     <h1>Forms</h1>
-    <form action="">
-        <div>name<br><input type="text" name="name" /></div>
-        <div>email<br><input type="email" name="email" /></div>
-        <div>password<br><input type="password" name="password" /></div>
-        <div><br><input type="submit"/></div>
-    </form>
+    <fieldset style="width: fit-content; border-color: blueviolet;color: violet;">
+        <legend style="background-color: blueviolet;">user details form</legend>
+        <form action="http://localhost:5044/api/user" method="get">
+            <div><label for="in-name">name</label><br><input id="in-name" type="text" name="name" /></div>
+            <div><label for="in-email">email</label><br><input id="in-email" type="email" name="email" /></div>
+            <div><label for="in-password">password</label><br><input id="in-password" type="password" name="password" /></div>
+            <div><br><input type="submit"/></div>
+        </form>
+    </fieldset>
   </body>
 </html>

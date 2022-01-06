@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>froms</h1>
+
+    <form action="http://localhost:8080/api/user" method="post">
+      <fieldset style="width: 100px">
+        <legend>hobbies</legend>
+        <input id="swimming" type="checkbox" name="hobbies" value="swimming"/>
+        <label for="swimming">swimming</label>
+        <br />
+        <input id="reading" type="checkbox" name="hobbies" value="reading"/>
+        <label for="reading">reading</label>
+        <br />
+        <input id="painting" type="checkbox" name="hobbies" value="painting"/>
+        <label for="painting">painting</label>
+      </fieldset>
+      <fieldset>
+        <legend>favorite color</legend>
+        <input id="red" type="radio" name="fav-color" value="red" />
+        <label for="red">red</label>
+        <br />
+        <input id="green" type="radio" name="fav-color" value="green" />
+        <label for="green">green</label>
+        <br />
+        <input id="blue" type="radio" name="fav-color" value="blue" />
+        <label for="blue">blue</label>
+      </fieldset>
+      <input type="submit" />
+      <input type="reset" />
+    </form>
+  </body>
+</html>
