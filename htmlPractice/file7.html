@@ -18,10 +18,12 @@
     // this is JavaScript
 function sayHello(){
     let name = document.getElementById("in-name").value; // read from the document
-    document.getElementById("input").innerHTML = "hello " + name; // write to the document
+    var firststatement = document.getElementById("input").innerHTML = "hello " + name; // write to the document
     // if we want to examine DOM objects
     // get a reference to the element
     let x = document.getElementById("in-name");
+    var helloworld = "hello world";
+    document.getElementById("input").innerHTML = firststatement + " " + helloworld;
     // print the element
     console.log(x);
     // dir the element - see the prototype
