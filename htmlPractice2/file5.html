@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My awesome page</title>
+    <style>
+        p, span {
+            background-color: pink;
+        }
+        p{
+            width: 20%;
+        }
+        span{
+            display: block;
+            border: 1px solid purple;
+            width: 200px;
+            padding: 3px 3px 3px 3px;
+            margin: 2px 2px 2px 2px;
+        }
+        #hidden{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Block</h1>
+    <p>paragraph</p>
+    <p>paragraph</p>
+    <p>paragraph</p>
+    <h1>Inline</h1>
+    <span>span 1</span>
+    <span>span 2</span>
+    <span id="hidden">span 3</span>
+    <hr />
+    <button onclick="hideForm()">hide form</button>
+    <fieldset>
+        <legend>form</legend>
+        <form id="form" action="">
+            name <input type="text" name="name" id="name">
+        </form>
+    </fieldset>
+    <hr />
+
+    <script>
+        function hideForm(){
+            var x = document.getElementById("form");
+            console.dir(x);
+            x.style.display = "none";
+        }
+    </script>
+</body>
+</html>
