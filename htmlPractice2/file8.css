@@ -27,13 +27,15 @@ h1{
 }
 
 aside{
-    border: 2px solid black;
     border-radius: 12px;
     grid-column: span 1;
+    background-color: rgb(126, 231, 250);
 }
 
 main{
+    border-radius: 12px;
     grid-column: span 1;
+    background-color: rgb(126, 231, 250);
 }
 
 footer{
