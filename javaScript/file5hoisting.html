@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>file 5</h1>
+
+    <script>
+        // hoisted variables
+        {
+        var x = 5; // hoisting
+        let y = 8; // no hoisting
+        }
+        
+        console.log(x); // can be read out of scope
+        console.log(y); // error - out of scope since let is not hoisted out of scope
+    </script>
+
+</body>
+</html>

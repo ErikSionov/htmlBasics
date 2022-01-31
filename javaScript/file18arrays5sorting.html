@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>arrays Sorting</h1>
+
+    <script>
+
+        var arr1 = [4,8,2,150,47,5,7,9];
+        console.log(arr1);
+        // standard sort alphabetical only, and can sort one digit numbers
+        // when array made with bigger numbers a comperator function needed
+        arr1.sort();
+        console.log(arr1);
+
+        // sort function can get a comperator callback function
+        arr1.sort(compareFn);
+        console.log(arr1);
+        
+        function compareFn(a,b) {
+            return a-b;
+            
+        }
+        
+        // we can use an arrow function to create a quick comperator
+        arr1.sort((a,b) => b-a);
+        console.log(arr1);
+        
+    </script>
+</body>
+</html>

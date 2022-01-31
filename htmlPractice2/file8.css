@@ -1,0 +1,43 @@
+html,body{
+    height: 100%;
+    margin: 0;
+}
+
+section{
+    height: 100%;
+    background-color: palegreen;
+    box-sizing: border-box;
+    display: grid;
+    grid-template-rows: 10% 80% 5% 5%;
+    grid-template-columns: 20% 80%;
+    text-align: center;
+}
+
+header{
+    grid-column: span 2;
+    text-align: center;
+}
+
+h1{
+    position: relative;
+    transform: translateY(-50%);
+    top: 50%;
+    margin: 0;
+    background-color: gold;
+}
+
+aside{
+    border-radius: 12px;
+    grid-column: span 1;
+    background-color: rgb(126, 231, 250);
+}
+
+main{
+    border-radius: 12px;
+    grid-column: span 1;
+    background-color: rgb(126, 231, 250);
+}
+
+footer{
+    grid-column: span 2;
+}

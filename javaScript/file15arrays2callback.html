@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>file15arrays2</h1>
+
+    <script>
+
+        var arr = ["eee","ccc", "aaa", "zzz", "fff"]
+
+        arr.forEach(callBackMethod2);
+
+        function callBackMethod(currentElement) {
+            console.log(currentElement);
+        }
+
+        // callback function can have up to three parameters element, array index and the array itself
+        function callBackMethod2(e, ind, arr) {
+            console.log(">>>" + ind + ") " + e +" - " + arr);
+        }
+
+    </script>
+</body>
+</html>

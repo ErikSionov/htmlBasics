@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="scripts.js"></script>
+    <title>my practice document</title>
+</head>
+<body>
+    <button onclick="showMenu()">show options</button>
+    <div id="divMenu">
+    <!-- addes scripts with external scripts file to drag and drop attributes -->
+    <h1 class="first">this is a header</h1>
+    <h1 class="first" draggable="true" ondrag="onDragStart()" ondragend="endDrag()">this is part two</h1>
+    </div>
+    <div id="test" style="width: 100%; height: 300px; border: 2px solid black; border-radius: 12px;">
+        <span style="margin: 20px;">new div to check menu visability</span>
+    </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+h1.first{
+    width: 50%;
+    color: aqua;
+    background-color: black;
+}
+
+h1 {
+    font-size: medium;
+}
+
+div#test{
+    border: 10px solid coral;
+}
+
+div#divMenu{
+   margin: 100px;
+}

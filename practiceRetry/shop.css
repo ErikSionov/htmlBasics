@@ -1,0 +1,28 @@
+header{
+    background-color: rgb(240, 60, 60);
+    padding: 3px;
+    text-align: right;
+}
+
+header li{
+    position: relative;
+    right: 2%;
+    display: inline;
+    text-align: center;
+    padding: 10px;
+    color: white;
+    font-weight: 600;
+}
+
+html, body{
+    margin: 0%;
+    padding: 0%;
+    height: 150%;
+}
+
+main#main{
+  background-color: tomato;
+}
+main, span{
+    position: absolute; top: 50%; left: 50%;
+}

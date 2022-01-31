@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>arrays</h1>
+
+    <script>
+
+        var arr = ["red", "green", "blue"];
+        console.log(arr.toString());
+        
+        arr[arr.length] = "white";
+        console.log(arr.toString());
+        
+        // push method - add element to the end of the array
+        arr.push("black");
+        console.log(arr.toString());
+
+        // join method joins all elements to a string with optional seperator
+        let str = arr.join(", ");
+        console.log(str);
+
+        // pop method - remove last element
+        arr.pop();
+        console.log(arr.toString());
+        
+        // delete method - delete element from any index in array
+        // but leaves an empty undefined object there
+        delete arr[2];
+        console.log(arr.toString());
+        
+        console.log("=========== splice");
+        // splice method - weave something in the middle
+        arr = ["Red", "Green", "Blue"];
+        console.log(arr.toString());
+        arr.splice(1, 2, "aaa", "bbb");
+        console.log(arr.toString());
+
+        // a way to delete element with splice without leaving empty indexes
+        arr.splice(2, 1);
+        console.log(arr.toString());
+
+        
+
+    </script>
+</body>
+</html>
