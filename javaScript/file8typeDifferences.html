@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>file8</h1>
+
+    <script>
+        //=====================//
+        // type is dynamic
+        // changed during program running
+        //====================//
+
+
+        // primitive data types
+        let x; // type and value are undefined
+        x = 5; // type is number and value is 5
+        x = 5.3; // type is number and value is 5.3
+        x = true; // type is boolean and value true;
+        x = "hello"; // type is string and value is hello
+
+        // object data types
+        x = {}; //type is object without anything in it
+        x = {id: 101, name: "dan"}; // type is object with some fields
+        console.log(typeof x); 
+        console.log(x);
+        
+        x = new Date();
+        console.log(x);
+        x = new Date(2022,0, 15); // 0 is january
+        console.log(x);
+        x = new Date("1980-05-23"); // declared as string
+        console.log(x);
+        
+        //==============
+        let a = undefined;
+        let b = null;
+
+        console.log(typeof a); // undefined
+        console.log(typeof b); //object
+
+        console.log(a == b); // true as values are the same, empty
+        console.log(a === b); // false because they are diffrent types even tho they are same value
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>file12 Classes in JS</h1>
+
+    <script>
+      // class definitions
+      class Person {
+        constructor(id, name, age) {
+          this.id = id;
+          this.name = name;
+          this.age = age;
+        }
+
+        // method
+        getData() {
+          return (
+            "Person[id=" +
+            this.id +
+            ", name=" +
+            this.name +
+            ", age=" +
+            this.age +
+            "]"
+          );
+        }
+      }
+
+      // create an object instance of class
+      let p1 = new Person(101, "Yossi", 22);
+      console.log(p1);
+
+      // we can add fields after instantiation
+      p1.address = "Jerusalem";
+      console.log(p1);
+      // we can return method calls from the object
+      console.log(p1.getData());
+
+      // inheritance
+      class Employee extends Person{
+      }
+      let emp = new Employee(220, "Dani", 22);
+      emp.salary = 7800;
+      console.log(emp);
+
+      
+    </script>
+  </body>
+</html>

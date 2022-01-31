@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>switch</h1>
+
+    numeric grade: <span id="grade-as-number"></span>
+    <div id="grade-as-text"></div>
+
+    <script>
+      let grade = Math.floor(Math.random() * 11);
+      document.getElementById("grade-as-number").innerHTML = grade;
+
+      // note: switch is using strict comparison: ===
+      switch (grade) {
+          case 5:
+              document.getElementById("grade-as-text").innerHTML = "pass";
+              break;
+      }
+    </script>
+  </body>
+</html>

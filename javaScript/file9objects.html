@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>file9</h1>
+
+    <script>
+      //person object with fields and functions
+      let person = {
+        id: 101,
+        name: "David",
+        age: 35,
+        getData: function () {
+          return (
+            "id: " + this.id + ", name: " + this.name + ", age: " + this.age
+          );
+        },
+      };
+      // access object fields
+      console.log(person.id);
+      console.log(person.name);
+      console.log(person.age);
+      console.log(person.getData()); // call method from inside object
+
+      // simple types - primitives:
+      // string, number, boolean, undefined
+
+      // complext types
+      // objects, functions
+
+      console.log(typeof person.name);
+      console.log(typeof person.getData()); // call the function and returns the value returned
+      console.log(typeof person.getData); // returns as a function type
+      
+    </script>
+  </body>
+</html>

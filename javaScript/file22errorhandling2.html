@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>errors</h1>
+    <div id="result"></div>
+
+    <script>
+        try {
+        let num = prompt("input age: ");
+            setAge(num);
+            document.getElementById("result").innerHTML = "success: " + num; 
+        } catch (error) {
+            console.log("error: " + error.message);            
+            document.getElementById("result").style = "color: red";
+            document.getElementById("result").innerHTML = "failed: " + error.message;
+        }
+
+        function setAge(age) {
+            if(age >= 0 && age <= 120 && age != null){
+                console.log("success");
+                return age;
+            }else{
+                let err = new Error(age + " is illegal");
+                err.name = "Age Error";
+                // we can throw any type not only Error object
+                throw err;
+                return null;
+            }
+            
+        }
+    </script>
+</body>
+</html>

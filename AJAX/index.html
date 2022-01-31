@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body style="background-color: darkslategray; color: aliceblue">
+    <h1>Store of Items</h1>
+    <fieldset>
+      <legend>Items</legend>
+      <div>id</div>
+      <div><input type="text" id="id" /></div>
+      <div>name</div>
+      <div><input type="text" id="name" /></div>
+      <div>price</div>
+      <div><input type="text" id="price" /></div>
+      <div>
+        <button onclick="save()">Save</button>
+        <button onclick="getOne()">GetOne</button>
+        <button onclick="getAll()">GetAll</button>
+        <button onclick="update()">update</button>
+        <button onclick="deleteOne()">delete</button>
+      </div>
+    </fieldset>
+    <fieldset>
+        <legend>Response</legend>
+        <div id="response"></div>
+    </fieldset>
+
+    <script>
+        // model class
+        class Item{
+            constructor(id,name,price){
+                this.id = id;
+                this.name = name;
+                this.price = price;
+            }
+        }
+
+        function save(){
+            let name = document.getElementById("name").value;
+            let price = document.getElementById("price").value;
+            let item = new Item(0,name,price);
+            // convert java object to JSON
+            let itemAsJson = JSON.stringify(item);
+            console.log(itemAsJson);
+            console.log(item);
+            // create an object for sending http requests
+            let xhttp = new XMLHttpRequest();
+            xhttp.onreadystatechange = function f1() {
+                if(this.readyState == 4){
+                    console.log(this.response);
+                }
+            }
+        }
+    </script>
+  </body>
+</html>

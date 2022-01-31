@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>arrays</h1>
+
+    <script>
+
+        // concatentaion of arrays, can concat more then two
+        var arr1 = [1,2,3];
+        var arr2 = [4,5,6];
+        var arr3 = arr1.concat(arr2);
+        console.log(arr3.toString());
+        
+        var arr4 = arr1.concat(arr2,arr3);
+        console.log(arr4.toString());
+
+        console.log("===================");
+        // shifting - removing first element in array
+        console.log(arr1.toString());
+        let e = arr1.shift();
+        console.log(e.toString());
+        console.log(arr1.toString());
+        
+        console.log("===================");
+        // unshifting - adding element to the beginning of the array
+        // returns the new array length
+        arr1.unshift(100);
+        console.log(arr1.toString());
+    </script>
+
+</body>
+</html>

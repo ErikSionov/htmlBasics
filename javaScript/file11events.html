@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<!-- event attribute in html tags -->
+<body onload="f1()">
+    <h1>file11 events</h1>
+
+    <input type="text" onchange="console.log('change made')">
+    <br>
+    <input id="in2" type="text" oninput="f2()">
+    <br>
+    <div id="my-div"></div>
+
+    <button onclick="f3()">Click</button>
+
+    <!-- JS scripts -->
+    <script>
+        function f1() {
+           console.log('page loaded'); 
+        }
+        
+        function f2() {
+            let x = document.getElementById("in2").value;
+            // console.log(x);
+            document.getElementById("my-div").innerHTML = x;
+        }
+        
+        function f3() {
+            // dir allows to see the content of the object
+            let in2 = document.getElementById("in2");
+            console.dir(in2);
+            in2.style.backgroundColor = "red";
+        }
+    </script>
+</body>
+</html>

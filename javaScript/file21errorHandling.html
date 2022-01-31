@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>javascript ERROR handling</h1>
+
+    <div id="success"></div>
+    <div id="fail" style="color: red; background-color: yellow"></div>
+
+    <script>
+      f1();
+      function f1() {
+        try {
+          if (Math.random() < 0.5) {
+            console.log("we are going to call a non existing function");
+            f2();
+        }
+        document.getElementById("success").innerHTML = "Success";
+        } catch (error) {
+          console.log("caught the error! " + error.message + error.name);
+          document.getElementById("fail").innerHTML = "Failed";
+        } finally {
+          console.log("from finally block");
+        }
+      }
+    </script>
+  </body>
+</html>

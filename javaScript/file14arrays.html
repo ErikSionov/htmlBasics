@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>arrays</h1>
+
+    <script>
+        let arr = [1,"moti", 45];
+        console.log(arr);
+        console.log("array length: " + arr.length);
+        
+        arr[0] = 200; // change element value on specific index
+        console.log(arr);
+
+        arr.push("sticks"); // add element to array and expend by one the array size
+        console.log(arr);
+
+        arr[10] = 300; // increase array up to this element if not exists in size
+        console.log(arr);
+        console.log("array length: " + arr.length);
+
+        arr = ["eee", "ccc", "aaa"];
+        console.log(arr.toString());
+        
+        // sort
+        arr.sort();
+        console.log(arr.toString());
+        
+        //reverse element order
+        arr.reverse();
+        console.log(arr.toString());
+        
+        //iterate over array elements with for loop
+        for (let i = 0; i < arr.length; i++) {
+            const element = arr[i];
+            console.log(arr[i]);
+        }
+
+    </script>
+</body>
+</html>
